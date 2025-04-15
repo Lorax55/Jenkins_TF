@@ -6,7 +6,7 @@ provider "aws" {
 resource "aws_instance" "web_server" {
   ami           = "ami-00a929b66ed6e0de6"
   instance_type = "t2.micro"
-  key_name      = "devops2"
+  key_name      = "DevOps2"
 
   vpc_security_group_ids = [aws_security_group.web_sg.id]
 
